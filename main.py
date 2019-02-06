@@ -1,5 +1,8 @@
+# Project 2018-9 Tel-Aviv University
+# The code is divided into 2 parts. The First part has all the function that apear in the main function which is 'linear fit'.
+# The second part is the main function 'linear fit'. That function uses all the functions from the first part.
 
-
+# Part 1:
 ################################################################################# project functions
 
 
@@ -19,7 +22,6 @@ def data_organizer(data_points):
                 try:
                     col_data.append(data_table[row][col])
                 except IndexError:
-                    print('Im here')
                     pass
             data_dict[data_table[0][col]] = col_data
         organized_data = data_dict
@@ -185,7 +187,9 @@ def make_linear_min_chi2_plot(organized_data, a, b, x_title_axis, y_title_axis):
     plt.xlabel(x_title_axis)
     plt.ylabel(y_title_axis)
     plt.savefig("linear_fit.svg")
-
+    #plt.show()
+    
+# Part 2:
 ######################################################################## project main function
 
 def linear_fit(file_name):
@@ -220,3 +224,6 @@ def linear_fit(file_name):
 
     make_linear_min_chi2_plot(organized_data,a,b,x_title_axis,y_title_axis)
     print(final_output)
+   
+
+
