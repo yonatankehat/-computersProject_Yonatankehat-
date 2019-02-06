@@ -1,5 +1,5 @@
 # Project 2018-9 Tel-Aviv University
-# The code is divided into 2 parts. The First part has all the function that apear in the main function which is 'linear fit'.
+# The code is divided into 2 parts. The First part has all the function that appear in the main function which is 'linear fit'.
 # The second part is the main function 'linear fit'. That function uses all the functions from the first part.
 
 # Part 1:
